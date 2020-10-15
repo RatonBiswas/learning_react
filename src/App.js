@@ -10,7 +10,8 @@ import './App.css';
 // import Refresh from './myComponents/Refresh'ReactDOM_Render
 // import FindDomNode from './myComponents/FindDomNode'
   //  import SelectOption from './myComponents/SelectOption'
-   import List from './myComponents/List'
+  //  import List from './myComponents/List'
+   import JsonList from './myComponents/JsonList'
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
       {/* <Welcome location = "Chandpur" name = "Raton Biswas"></Welcome> */}
       {/* <MyBootstrap></MyBootstrap>
       <ReactState></ReactState> */}
-      <List/>
+      <JsonList/>
 
     </div>
   );
