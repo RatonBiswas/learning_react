@@ -4,7 +4,7 @@ class CountryList extends Component {
     constructor() {
         super();
         this.state = {
-            countryData: []
+            
         }
     }
 
@@ -23,7 +23,7 @@ class CountryList extends Component {
         const countyName = listOfData.map((listOfData)=>{
             return <li>{listOfData.name}</li>
         })
-        
+
         return (
             <div>
                 <ul>
