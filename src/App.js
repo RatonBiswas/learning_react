@@ -14,7 +14,8 @@ import './App.css';
   //  import List from './myComponents/List'
   //  import JsonList from './myComponents/JsonList'
   //  import  CountryList from './myComponents/CountryList'
-  import  Mytable from './Mytable'
+  // import  Mytable from './Mytable'
+  import  Navigation from './myComponents/Navigation'
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
       {/* <Welcome location = "Chandpur" name = "Raton Biswas"></Welcome> */}
       {/* <MyBootstrap></MyBootstrap>
       <ReactState></ReactState> */}
-      <Mytable/>
+      <Navigation/>
 
     </div>
   );
