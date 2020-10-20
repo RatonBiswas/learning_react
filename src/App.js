@@ -13,7 +13,8 @@ import './App.css';
   //  import SelectOption from './myComponents/SelectOption'
   //  import List from './myComponents/List'
   //  import JsonList from './myComponents/JsonList'
-   import  CountryList from './myComponents/CountryList'
+  //  import  CountryList from './myComponents/CountryList'
+  import  Mytable from './Mytable'
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
       {/* <Welcome location = "Chandpur" name = "Raton Biswas"></Welcome> */}
       {/* <MyBootstrap></MyBootstrap>
       <ReactState></ReactState> */}
-      <CountryList/>
+      <Mytable/>
 
     </div>
   );
