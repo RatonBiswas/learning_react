@@ -15,7 +15,10 @@ import './App.css';
   //  import JsonList from './myComponents/JsonList'
   //  import  CountryList from './myComponents/CountryList'
   // import  Mytable from './Mytable'
-  import  Navigation from './myComponents/Navigation'
+  // import  Navigation from './myComponents/Navigation'
+  import  Myroute from './myComponents/Myroute'
+  import  Mynavigation from './myComponents/Mynavigation'
+  import  {BrowserRouter} from 'react-router-dom'
 
 function App() {
   return (
@@ -44,7 +47,10 @@ function App() {
       {/* <Welcome location = "Chandpur" name = "Raton Biswas"></Welcome> */}
       {/* <MyBootstrap></MyBootstrap>
       <ReactState></ReactState> */}
-      <Navigation/>
+      <BrowserRouter>
+        <Mynavigation/>
+        <Myroute/>
+      </BrowserRouter>
 
     </div>
   );
