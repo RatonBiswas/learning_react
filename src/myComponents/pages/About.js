@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Redirect} from 'react-router-dom'
 
 class About extends Component {
     constructor({match}){
@@ -8,11 +9,16 @@ class About extends Component {
         }
     }
     render() {
-        return (
-            <div>
-                <h1>{this.state.myname}</h1>
-            </div>
-        );
+        if(sessionStorage.getItem("username")==null) {
+            return <Redirect to="/login"></Redirect>
+        }else{
+            return (
+                <div>
+                    <h1>{this.state.myname}</h1>
+                </div>
+            );
+        }
+        
     }
 }
 

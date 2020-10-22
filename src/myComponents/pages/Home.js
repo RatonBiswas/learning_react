@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-
+import {Redirect} from 'react-router-dom'
 class Home extends Component {
     render() {
-        return (
-            <div>
-                <h1>Home</h1>
-            </div>
-        );
+
+        if(sessionStorage.getItem("username")==null) {
+            return <Redirect to="/login"></Redirect>
+        }else{
+            return (
+                <div>
+                    <h1>Home</h1>
+                </div>
+            );
+        }
     }
 }
 
