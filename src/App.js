@@ -2,7 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 // import raton from './raton.jpeg';
 import './App.css';
-// import Hello from './myComponents/Hello'
+import Hello from './myComponents/Hello'
 // import Welcome from './myComponents/Welcome'
 // import MyBootstrap from './myComponents/Bootstrap'
 // import ReactState from './myComponents/ReactState'
@@ -16,9 +16,10 @@ import './App.css';
   //  import  CountryList from './myComponents/CountryList'
   // import  Mytable from './Mytable'
   // import  Navigation from './myComponents/Navigation'
-  import  Myroute from './myComponents/Myroute'
-  import  Mynavigation from './myComponents/Mynavigation'
-  import  {BrowserRouter} from 'react-router-dom'
+  // import  Myroute from './myComponents/Myroute'
+  // import  Mynavigation from './myComponents/Mynavigation'
+  // import  {BrowserRouter} from 'react-router-dom'
+  import {AppProvider} from './myComponents/Mycontext'
 
 function App() {
   return (
@@ -47,10 +48,13 @@ function App() {
       {/* <Welcome location = "Chandpur" name = "Raton Biswas"></Welcome> */}
       {/* <MyBootstrap></MyBootstrap>
       <ReactState></ReactState> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Mynavigation/>
         <Myroute/>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <AppProvider value=" Raton sent data to hello">
+      <Hello/>
+      </AppProvider>
 
     </div>
   );

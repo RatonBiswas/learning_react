@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { Component } from "react";
+import  {ReceiveConsumer}  from "./Mycontext";
 
-function Hello(props){
-
-    function DoThis() {
-        alert('This Clicked From Funtional Component');
-    }
-    return(
-        <div class="hello">
-            <button onClick={DoThis}>Click Me</button>
-            <h1>Hello {props.name}.I thing you are  {props.age} years old</h1>
-        </div>
+class Hello extends Component {
+  render() {
+    return (
+      <div><h1>
+        <ReceiveConsumer>
+          {(message) => {
+            return message;
+          }}
+        </ReceiveConsumer></h1>
+      </div>
     );
+  }
 }
 
-export default Hello
+export default Hello;
