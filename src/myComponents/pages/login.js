@@ -5,11 +5,15 @@ class Login extends Component {
     login = ()=> {
         sessionStorage.setItem("username","ratonnana")
     }
+    logout = ()=> {
+        sessionStorage.clear()
+    }
 
     render() {
         return (
             <div>
                 <button onClick={this.login}>Login</button>
+                <button onClick={this.logout}>Logout</button>
             </div>
         );
     }
